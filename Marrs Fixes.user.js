@@ -9,19 +9,24 @@
 // @copyright  2014+, GSB
 // ==/UserScript==
 
+// User settings
+username = 'Moore, Adam';
+setupType = 'As is';
+attendanceCount = 2;
+eventType = 'Meeting Staff/Faculty';
+alcohol = 'No';
+catering = 'No Catering';
+
+// Get available times
+rooms = ['N203', 'N215', 'N216'];
+
+
+/**
+ * =====================================================================
+ * When upgrading copy and replace everything after this header.
+ * =====================================================================
+ */
 (function($) {
-  // User settings
-  username = 'Moore, Adam';
-  setupType = 'As is';
-  attendanceCount = 2;
-  eventType = 'Meeting Staff/Faculty';
-  alcohol = 'No';
-  catering = 'No Catering';
-  
-  // Get available times
-  rooms = ['N203', 'N215', 'N216'];
-  
-  
   // Set the attendance count
   $('#ctl00_pc_Attendance_box').val(attendanceCount);
   
@@ -142,5 +147,4 @@
     
     return hrs + ':' + min + ampm;
   }
-  
 })(jQuery);
