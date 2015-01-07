@@ -18,7 +18,7 @@ alcohol = 'No';
 catering = 'No Catering';
 
 // Get available times
-rooms = ['N203', 'N215', 'N216'];
+//rooms = ['N203', 'N215', 'N216'];
 
 
 /**
@@ -46,8 +46,8 @@ rooms = ['N203', 'N215', 'N216'];
   // Trigger the change on the name element.
   $('#ctl00_pc_Contact_ddl').trigger('change');
   
-  // Run the get available times functions.
-  getAvailableTimes(rooms);
+  // Run the get available times functions. @TODO
+  //getAvailableTimes(rooms);
   
   // Helper function to select a dropdown.
   function selectDropdown(id, text) {
